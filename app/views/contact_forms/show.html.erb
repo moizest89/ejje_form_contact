@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @contact_form.name %>
+</p>
+
+<p>
+  <b>Personal email:</b>
+  <%= @contact_form.personal_email %>
+</p>
+
+<p>
+  <b>Appointment:</b>
+  <%= @contact_form.appointment %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @contact_form.company %>
+</p>
+
+<p>
+  <b>Email 1:</b>
+  <%= @contact_form.email_1 %>
+</p>
+
+<p>
+  <b>Email 2:</b>
+  <%= @contact_form.email_2 %>
+</p>
+
+<p>
+  <b>Email 3:</b>
+  <%= @contact_form.email_3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_contact_form_path(@contact_form) %> |
+<%= link_to 'Back', contact_forms_path %>

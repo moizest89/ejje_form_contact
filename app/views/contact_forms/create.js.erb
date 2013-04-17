@@ -1,0 +1,11 @@
+<%if @error%>
+	//console.log("<%= @contact_form.errors.inspect%>")
+	<% @contact_form.errors.each do |msg| %>
+        error_validate("<%= msg %>")
+    <% end %>
+<%else%>
+	alert('save')
+	$('form#new_contact_form').slideUp(function(){
+		
+	});
+<%end%>
