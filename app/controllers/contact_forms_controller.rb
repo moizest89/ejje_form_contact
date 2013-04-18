@@ -45,6 +45,7 @@ class ContactFormsController < ApplicationController
       if @contact_form.save
          @error = false
          @contact_form.errors
+         ContactMailer.contact_me(@contact_form).deliver
       end
   end
 
