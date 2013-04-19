@@ -43,7 +43,8 @@
       <%= f.text_field :email_3 %>
     </div>
     <div class="actions">
-      <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar" id="send_email" onclick="wait_form(1,'send_email')">
+      <%#= link_to "Enviar", "javascript:;", :id =>"send_email", :onclick => "wait_form(1,'send_email')"%>
     </div>
   <% end %>
 </div>

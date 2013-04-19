@@ -1,10 +1,14 @@
 <%if @error%>
 	//console.log("<%= @contact_form.errors.inspect%>")
-	<% @contact_form.errors.each do |msg| %>
-        error_validate("<%= msg %>")
-    <% end %>
+	$('input',"form#new_contact_form").removeClass("error")
+	setTimeout(function() {
+		<% @contact_form.errors.each do |msg| %>
+        	error_validate("<%= msg %>")
+    	<% end %>	
+    	wait_form(2,'send_email')
+	}, 800);
+
 <%else%>
-	alert('save')
 	$('form#new_contact_form').slideUp(function(){
 		
 	});

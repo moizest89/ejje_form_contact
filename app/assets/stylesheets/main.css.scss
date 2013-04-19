@@ -195,13 +195,14 @@ div#form_contact{
 			color:#444444;
 		}
 		input{
-			border-bottom: 3px;
-			border-right: 3px;
 			margin-left: 30px;
 			width: 215px;
 			height: 23px;
-			border-color: rgb(204, 204, 204);
+			border:1px solid rgb(204, 204, 204);
 			padding-left:5px;
+			-moz-box-shadow: inset 1px 1px 3px #888;
+			-webkit-box-shadow: inset 1px 1px 3px #888;
+			box-shadow: inset 1px 1px 3px #888;
 		}
 		input.error{
 			border-color:#ff0000;
@@ -223,5 +224,9 @@ div#form_contact{
 		font-weight: normal;
 		font-style: normal;
 		cursor:pointer;
+	}
+	input[type="submit"]:disabled{
+		background:#EFEFEF;
+		cursor:auto;
 	}
 }

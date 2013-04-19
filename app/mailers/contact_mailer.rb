@@ -10,6 +10,6 @@ class ContactMailer < ActionMailer::Base
     @params = params
     @greeting = "Hi"
     #mail to: "to@example.org"
-    mail(:from => @params.personal_email, :to => @to, :subject => "360eim - Peak Pilates Appointment")
+    mail(:from => @params.personal_email,:to =>@params.personal_email,  :subject => "- EJJE -Gracias Por tu ayuda")
   end
 end
