@@ -7,7 +7,7 @@
     	<% end %>	
     	wait_form(2,'send_email')
 	}, 800);
-
+	console.dir('<%= @contact_form.errors.full_messages%>')
 <%else%>
 	$('form#new_contact_form').slideUp(function(){
 		

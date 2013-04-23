@@ -18,7 +18,6 @@ function error_validate(vals){
 }
 
 function wait_form(opc,input){
-	console.log(input)
 	if (opc == 1){
 		$("#"+input).attr('disabled','disabled');
 		setTimeout(function() {
