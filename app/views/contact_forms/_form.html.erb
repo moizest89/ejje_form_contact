@@ -1,17 +1,10 @@
 <div id="form_contact">
   <%= form_for(@contact_form, :remote => true) do  |f| %>
-    <% if @contact_form.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@contact_form.errors.count, "error") %> prohibited this contact_form from being saved:</h2>
 
-        <ul>
-        <% @contact_form.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
+  <div id="errors">
+    
+  </div>
+ 
     <div class="field">
       
       <label>Nombre:</label>

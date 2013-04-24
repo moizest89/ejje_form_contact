@@ -2,13 +2,13 @@ $(document).ready(function(){
 	//$('form#new_contact_form').submit(false);
 })
 
-function error_validate(vals){
+function error_validate(vals,text){
 	var form_contact = $('form#new_contact_form')
 	var inputs = [];
 	inputs.push(vals);
 	//console.log(inputs)
 	//$('input',"form#new_contact_form").removeClass("error")
-	console.dir(inputs)
+	console.dir(vals+" "+text)
 	for (var i = 0; i < inputs.length; i++) {
 		if (i == 0){
 			//$("input#contact_form_"+inputs[i],"form#new_contact_form").focus();

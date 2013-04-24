@@ -1,16 +1,16 @@
+<div id="list_view">
+
 <h1>Lista de Contactos</h1>
 
-<table border="1" cellpadding="0">
+<table border="1" cellpadding="0" id="table_contact">
   <tr>
-    <th>Nombre</th>
+    <th class="no_border">Nombre</th>
     <th>E-mail</th>
     <th>Cargo</th>
     <th>Empresa</th>
     <th>Email 1</th>
     <th>Email 2</th>
     <th>Email 3</th>
-    <th></th>
-    <th></th>
     <th></th>
   </tr>
 
@@ -23,9 +23,9 @@
     <td><%= contact_form.email_1 %></td>
     <td><%= contact_form.email_2 %></td>
     <td><%= contact_form.email_3 %></td>
-    <td><%= link_to 'Mostrar', contact_form %></td>
-    <td><%#= link_to 'Edit', edit_contact_form_path(contact_form) %></td>
-    <td><%= link_to 'Eliminar', contact_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', contact_form %>
+    <%#= link_to 'Edit', edit_contact_form_path(contact_form) %>
+    <%= link_to 'Eliminar', contact_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
@@ -33,3 +33,4 @@
 <br />
 
 <%#= link_to 'New Contact form', new_contact_form_path %>
+</div>

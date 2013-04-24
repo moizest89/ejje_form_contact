@@ -230,3 +230,66 @@ div#form_contact{
 		cursor:auto;
 	}
 }
+div#Form-container{
+	
+}
+div#confirmation_form{
+	width:340px;
+	height:467px;
+	display:none;
+	span.image{
+		width:inherit;
+		height:inherit;
+		display:table-cell;
+		vertical-align:middle;
+		text-align:center;
+	}
+}
+div#list_view{
+	position:relative;
+	h1{
+		font-size:28px;
+		font-weight:bold;
+		line-height:50px;
+
+	}
+}
+table#table_contact{
+	border:1px solid #444;
+	tr{
+		th{
+			border-bottom:1px solid #444;
+			padding:3px 0;
+			text-align:center;
+			background:#333;
+			color:#FFF;
+			border-left:1px solid #EEEEEE;
+		}
+		th.no_border{
+			border-left:1px solid #444;
+		}
+	}
+	tr{
+		background:#EEEEEE;
+		td{
+			border-bottom:1px solid #444;
+			border-left:1px solid #444;
+			padding:3px;
+			text-align:center;
+			vertical-align:middle;
+			a{
+				text-decoration:none;
+				color:#0a22d3;
+				font-weight:bold;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+			
+		}
+		
+	}
+	tr:nth-child(2n){
+		background:#FAFAFA;
+	}
+}

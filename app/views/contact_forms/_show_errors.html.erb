@@ -1,0 +1,14 @@
+<% if @contact_form.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@contact_form.errors.count, "error") %> encontrados en el formulario antes de guardar:</h2>
+
+    <ul>
+    <% @contact_form.errors.each do |attr,msg| %>
+      <li><%= msg %></li>
+    <% end %>
+
+
+    </ul>
+    
+  </div>
+<% end %>
